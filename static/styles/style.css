@@ -65,7 +65,8 @@ body {
 }
 
 .right-msg {
-    flex-direction: row-reverse;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .right-msg .msg-bubble {
