@@ -10,9 +10,9 @@ def get_response(incoming_msg):
     try:
       send = get(api, params=dat)
       res = send.json()
-      if res.reply:
-         return res.reply
-      if res.error:
-         return res.error
+      if res['reply']:
+         return res['reply']
+      if res['error']:
+         return res['error']
     except Exception as e:
         return f"Error: {send.text} ? e ? {e}"
