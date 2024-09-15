@@ -14,5 +14,5 @@ def get_response(incoming_msg):
          return res.reply
       if res.error:
          return res.error
-    except:
-        return "An Error Occured"
+    except Exception as e:
+        return f"Error: {send.text} ? e ? {e}"
