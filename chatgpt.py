@@ -5,7 +5,7 @@ from requests import get
 
 def get_response(incoming_msg):
     name = "Friend"
-    api = "https://mota-dev.x10.bz/ai"
+    api = "https://mota-dev.x10.bz/thabani"
     dat = { "uid": "1234567891011121314151617181920", "name": name, "prompt": incoming_msg }
     try:
       send = get(api, params=dat)
